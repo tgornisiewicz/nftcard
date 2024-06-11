@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  width: 325px;
+  height: 535px;
+  margin-top: 65px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container__image {
+  padding: 23px;
+  height: 340px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container__image > img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.container__text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 23px;
+}
+.container__text__header {
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+}
+.container__text__header:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.container__text__description {
+  font-size: 16px;
+  color: #8ca9d5;
+  font-weight: 150;
+  margin-top: 12px;
+}
+.container__text__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 12px;
+  align-items: center;
+}
+.container__text__data__eth {
+  display: flex;
+  align-items: center;
+}
+.container__text__data__eth__text {
+  margin-left: 5px;
+  color: hsl(178, 100%, 50%);
+  font-size: 15px;
+  font-weight: 600;
+}
+.container__text__data__days {
+  display: flex;
+  align-items: center;
+}
+.container__text__data__days__text {
+  margin-left: 5px;
+  color: #8ca9d5;
+  font-size: 15px;
+  font-weight: 300;
+}
+.container__text__author {
+  display: flex;
+  margin-top: 17px;
+  align-items: center;
+}
+.container__text__author > img {
+  width: 33px;
+  height: 33px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+}
+.container__text__author__data {
+  display: flex;
+  margin-left: 14px;
+  color: hsl(215, 51%, 70%);
+}
+.container__text__author__data > p {
+  color: white;
+  margin-left: 5px;
+}
+.container__text__author__data > p:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 13px;
+  background-color: hsl(215, 32%, 27%);
+  border: 0;
+  height: 1px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    margin-top: 20vh;
+    width: 370px;
+    height: 600px;
+  }
+  .container__image {
+    padding: 30px;
+    height: 370px;
+  }
+  .container__text {
+    padding: 0 30px;
+  }
+  .container__text__header {
+    margin-top: 4px;
+  }
+  .container__text__description {
+    margin-top: 21px;
+  }
+  .container__text__data {
+    margin-top: 21px;
+  }
+  .container__text__author {
+    margin-top: 21px;
+  }
+  hr {
+    margin-top: 21px;
+  }
+}/*# sourceMappingURL=main.css.map */

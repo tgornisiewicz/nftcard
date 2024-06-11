@@ -1,0 +1,146 @@
+@use 'colors' as *;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Outfit', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background-color: $bgcolor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	background-color: $cbgcolor;
+	width: 325px;
+	height: 535px;
+	margin-top: 65px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+
+	&__image {
+		padding: $space;
+		height: 340px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		& > img {
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		padding: 0 $space;
+		&__header {
+			font-size: 22px;
+			color: white;
+			font-weight: 600;
+			&:hover {
+				color: $c2;
+				cursor: pointer;
+			}
+		}
+		&__description {
+			font-size: 16px;
+			color: $dcolor;
+			font-weight: 150;
+			margin-top: 12px;
+		}
+		&__data {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 12px;
+			align-items: center;
+			&__eth {
+				display: flex;
+				align-items: center;
+				&__text {
+					margin-left: 5px;
+					color: $c2;
+					font-size: 15px;
+					font-weight: 600;
+				}
+			}
+			&__days {
+				display: flex;
+				align-items: center;
+				&__text {
+					margin-left: 5px;
+					color: $dcolor;
+					font-size: 15px;
+					font-weight: 300;
+				}
+			}
+		}
+		&__author {
+			display: flex;
+			margin-top: 17px;
+			align-items: center;
+			& > img {
+				width: 33px;
+				height: 33px;
+				border: 1.5px solid white;
+				border-radius: 50%;
+			}
+			&__data {
+				display: flex;
+				margin-left: 14px;
+				color: $c1;
+				& > p {
+					color: white;
+					margin-left: 5px;
+					&:hover {
+						color: $c2;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+hr {
+	margin-top: 13px;
+	background-color: $line;
+	border: 0;
+	height: 1px;
+}
+
+@media screen and (min-width: 700px) {
+	.container {
+		margin-top: 20vh;
+		width: 370px;
+		height: 600px;
+		&__image {
+			padding: 30px;
+			height: 370px;
+		}
+		&__text {
+			padding: 0 30px;
+			&__header {
+				margin-top: 4px;
+			}
+			&__description {
+				margin-top: 21px;
+			}
+			&__data {
+				margin-top: 21px;
+			}
+			&__author {
+				margin-top: 21px;
+			}
+		}
+	}
+	hr {
+		margin-top: 21px;
+	}
+}
